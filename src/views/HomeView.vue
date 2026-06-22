@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[FAF9F5] ">
+  <div class="min-h-screen bg-[#FAF9F5] ">
 
     <section class="relative min-h-[700px] md:min-h-[850px] flex items-center justify-center py-12 px-4 md:py-20">
       <div class="relative z-10 w-full max-w-7xl bg-white rounded-[32px] border border-slate-200 shadow-[0_20px_60px_-15px_rgba(15,23,42,0.04)] p-8 md:p-16 lg:p-20">        

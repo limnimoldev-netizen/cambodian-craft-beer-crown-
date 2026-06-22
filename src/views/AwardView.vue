@@ -2,7 +2,7 @@
   <!-- link icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <div class="min-h-screen bg-[FAF9F5] font-sans text-slate-800 antialiased selection:bg-amber-100">
+    <div class="min-h-screen bg-[#FAF9F5] font-sans text-slate-800 antialiased selection:bg-amber-100">
     
     <!-- Hero Header -->
     <section class="max-w-4xl mx-auto px-4 pt-20 pb-16 text-center relative">
