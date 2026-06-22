@@ -255,7 +255,7 @@ const sponsors = [
     name: 'THAI TAN',
     logo: 'CopyofLogoThaiTaneng1.webp',
     role: 'Community supporter.',
-    tier: 'Partner'
+    tier: 'Bronze'
   },
   // Silver Sponsors (2 sponsors)
   {
