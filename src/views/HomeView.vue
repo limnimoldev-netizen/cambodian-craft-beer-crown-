@@ -38,10 +38,15 @@
           </div>
 
           <div class="flex flex-wrap gap-4">
-              <RouterLink to="/judge" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-10 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-lg shadow-amber-500/20 active:scale-[0.98] transition-all duration-200">
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLScEjueBWitDWygOZkaHDnkADWIHhYdgZ-lH_u3EvKM2RzL1AA/viewform" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-10 py-4 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl shadow-lg shadow-amber-500/20 active:scale-[0.98] transition-all duration-200"
+              >
                 <i class="fa-solid fa-check-to-slot"></i>
                 <span>Judge Here</span>
-              </RouterLink>
+              </a>
           </div>
 
         </div>
