@@ -23,6 +23,14 @@ const router = createRouter({
     },
 
     {
+       path: '/styles',
+      name: 'styles',
+      component: () => import('../views/Styles.vue'), 
+    },
+    
+
+
+    {
       path: "/awards",
       name: 'award',
       
@@ -45,8 +53,8 @@ const router = createRouter({
       name: 'sponsors',
       component: () => import('../views/Sponsor.View.vue')
     }
+    
 
-   
     
 
  
