@@ -62,10 +62,13 @@
                 href="https://docs.google.com/forms/d/e/1FAIpQLScEjueBWitDWygOZkaHDnkADWIHhYdgZ-lH_u3EvKM2RzL1AA/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center bg-[#EE9F27] hover:bg-[#b57305] text-white px-10 py-3.5 rounded-full font-bold transition-all shadow-md text-lg tracking-wide gap-3 w-full sm:w-auto justify-center"
+                class="group inline-flex items-center bg-gradient-to-r from-[#EE9F27] to-[#d97706] hover:from-[#d97706] hover:to-[#b57305] text-white px-10 py-3.5 rounded-full font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-lg tracking-wide gap-3 w-full sm:w-auto justify-center relative overflow-hidden"
               >
-                <i class="fa-solid fa-check-to-slot"></i>
-                <span>Judge Here</span>
+                <span class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500"></span>
+                
+                <i class="fa-solid fa-check-to-slot transition-transform duration-300 group-hover:rotate-12 relative z-10"></i>
+                
+                <span class="relative z-10">Judge Here</span>
               </a>
             </div>
 

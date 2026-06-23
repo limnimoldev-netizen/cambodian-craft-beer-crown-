@@ -21,7 +21,7 @@ const toggleMenu = () => {
         </div>
 
         <nav class="hidden md:flex items-center gap-8 font-medium text-base">
-          <RouterLink to="/" class="nav-link flex items-center gap-1.5 bg-gradient-to-r from-[#5b0014] to-[#7b1d1d] bg-clip-text text-transparent hover:from-[#f0a22a] hover:to-[#EE9F27] pb-1 transition-all duration-300 relative group" active-class="border-b-2 border-[#f0a22a] from-[#f0a22a] to-[#EE9F27] font-bold">
+          <RouterLink to="/" class="nav-link flex items-center gap-1.5 text-[#333333] hover:text-[#f0a22a] pb-1 transition-all duration-300 relative group" active-class="border-b-2 border-[#f0a22a] text-black font-semibold">
             <House class="w-5 h-5 text-center transition-transform duration-300 group-hover:scale-125" /> 
             <span class="relative">
               Home
@@ -29,7 +29,7 @@ const toggleMenu = () => {
             </span>
           </RouterLink>
 
-          <RouterLink to="/breweries" class="nav-link flex items-center gap-1.5 bg-gradient-to-r from-[#5b0014] to-[#7b1d1d] bg-clip-text text-transparent hover:from-[#f0a22a] hover:to-[#EE9F27] pb-1 transition-all duration-300 relative group" active-class="border-b-2 border-[#f0a22a] from-[#f0a22a] to-[#EE9F27] font-bold">
+          <RouterLink to="/breweries" class="nav-link flex items-center gap-1.5 text-[#333333] hover:text-[#f0a22a] pb-1 transition-all duration-300 relative group" active-class="border-b-2 border-[#f0a22a] text-black font-semibold">
             <Beer class="w-4 h-4 transition-transform duration-300 group-hover:scale-125" /> 
             <span class="relative">
               Breweries
@@ -37,7 +37,7 @@ const toggleMenu = () => {
             </span>
           </RouterLink>
 
-          <RouterLink to="/schedule" class="nav-link flex items-center gap-1.5 bg-gradient-to-r from-[#5b0014] to-[#7b1d1d] bg-clip-text text-transparent hover:from-[#f0a22a] hover:to-[#EE9F27] pb-1 transition-all duration-300 relative group" active-class="border-b-2 border-[#f0a22a] from-[#f0a22a] to-[#EE9F27] font-bold">
+          <RouterLink to="/schedule" class="nav-link flex items-center gap-1.5 text-[#333333] hover:text-[#f0a22a] pb-1 transition-all duration-300 relative group" active-class="border-b-2 border-[#f0a22a] text-black font-semibold">
             <Calendar class="w-4 h-4 transition-transform duration-300 group-hover:scale-125" /> 
             <span class="relative">
               Schedule
@@ -45,7 +45,7 @@ const toggleMenu = () => {
             </span>
           </RouterLink>
 
-          <RouterLink to="/awards" class="nav-link flex items-center gap-1.5 bg-gradient-to-r from-[#5b0014] to-[#7b1d1d] bg-clip-text text-transparent hover:from-[#f0a22a] hover:to-[#EE9F27] pb-1 transition-all duration-300 relative group" active-class="border-b-2 border-[#f0a22a] from-[#f0a22a] to-[#EE9F27] font-bold">
+          <RouterLink to="/awards" class="nav-link flex items-center gap-1.5 text-[#333333] hover:text-[#f0a22a] pb-1 transition-all duration-300 relative group" active-class="border-b-2 border-[#f0a22a] text-black font-semibold">
            <Trophy class="w-5 h-5 text-center transition-transform duration-300 group-hover:scale-125" /> 
            <span class="relative">
              Awards
@@ -53,7 +53,7 @@ const toggleMenu = () => {
            </span>
           </RouterLink>
 
-          <RouterLink to="/styles" class="nav-link flex items-center gap-1.5 bg-gradient-to-r from-[#5b0014] to-[#7b1d1d] bg-clip-text text-transparent hover:from-[#f0a22a] hover:to-[#EE9F27] pb-1 transition-all duration-300 relative group" active-class="border-b-2 border-[#f0a22a] from-[#f0a22a] to-[#EE9F27] font-bold">
+          <RouterLink to="/styles" class="nav-link flex items-center gap-1.5 text-[#333333] hover:text-[#f0a22a] pb-1 transition-all duration-300 relative group" active-class="border-b-2 border-[#f0a22a] text-black font-semibold">
             <Award class="w-5 h-5 text-center transition-transform duration-300 group-hover:scale-125" /> 
             <span class="relative">
               Styles
@@ -61,7 +61,7 @@ const toggleMenu = () => {
             </span>
           </RouterLink>
 
-          <RouterLink to="/sponsors" class="nav-link flex items-center gap-1.5 bg-gradient-to-r from-[#5b0014] to-[#7b1d1d] bg-clip-text text-transparent hover:from-[#f0a22a] hover:to-[#EE9F27] pb-1 transition-all duration-300 relative group" active-class="border-b-2 border-[#f0a22a] from-[#f0a22a] to-[#EE9F27] font-bold">
+          <RouterLink to="/sponsors" class="nav-link flex items-center gap-1.5 text-[#333333] hover:text-[#f0a22a] pb-1 transition-all duration-300 relative group" active-class="border-b-2 border-[#f0a22a] text-black font-semibold">
             <Handshake class="w-5 h-5 text-center transition-transform duration-300 group-hover:scale-125" /> 
             <span class="relative">
               Sponsors
