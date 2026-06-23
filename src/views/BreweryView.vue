@@ -59,15 +59,15 @@
 </template>
 
 <script setup>
-// 1. Tell Vite to find and bundle all images inside the assets folder
-const images = import.meta.glob('../assets/*.{png,jpg,jpeg,svg,webp}', { eager: true })
+// 1. Tell Vite to find all images, whether they are lowercase, uppercase, png, or webp
+const images = import.meta.glob('../assets/*.{png,PNG,jpg,JPG,jpeg,JPEG,svg,SVG,webp,WEBP}', { eager: true })
 
 const breweries = [
   {
     name: 'Projekt Brew Co.',
     description: 'Projekt brews is a small microbrewery based in Kampot. A Kampot-based microbrewery making modern hoppy beers since 2020.',
     facebook: 'https://www.facebook.com/profile.php?id=100063463360069',
-    logo: 'projectbrews.webp' // FIX: Just use the plain filename now!
+    logo: 'projectbrews.webp' 
   },
   {
     name: 'Sak Pub',
@@ -121,7 +121,7 @@ const breweries = [
     name: 'Himawari Microbrewery',
     description: 'Himawari Microbrewery is the 1st and only microbrewery launched by it’s 5-star hotel-apartments in Cambodia.',
     facebook: 'https://www.facebook.com/HimawariHotelMicrobrewery',
-    logo: 'himawari.png'
+    logo: 'Himawari Microbrewery.png' // Put back original name style
   },
   {
     name: 'Chug Lab',
@@ -133,14 +133,20 @@ const breweries = [
     name: 'Bash Brewing',
     description: 'is one of the Kingdom’s original craft breweries, creating some of the finest all-natural craft beer in Cambodia.',
     facebook: 'https://www.facebook.com/bashbrewingkh',
-    logo: 'bash-brewing.png'
+    logo: 'Bash Brewing.png' // Put back original name style
   }
 ]
 
-// 2. Updated helper function to match the globally imported filenames
+// 2. This helper tries to find the image. If it fails, it prints a helpful message in your browser console!
 const getImageUrl = (filename) => {
   const path = `../assets/${filename}`
-  return images[path] ? images[path].default : ''
+  
+  if (images[path]) {
+    return images[path].default
+  } else {
+    console.error(`Vite cannot find file: src/assets/${filename}. Check spelling/extension!`)
+    return ''
+  }
 }
 </script>
 
