@@ -33,12 +33,12 @@ const toggleMenu = () => {
             <Calendar class=" fa-solid w-4 h-4" /> Schedule
           </RouterLink>
 
-          <RouterLink to="/styles" class="flex items-center gap-1.5 text-[#333333] hover:text-[#f0a22a] pb-1 transition-colors" active-class="border-b-2 border-[#f0a22a] text-black font-semibold">
-            <Award class="w-5 h-5 text-center" /> Styles
-          </RouterLink>
-
           <RouterLink to="/awards" class="flex items-center gap-1.5 text-[#333333] hover:text-[#f0a22a] pb-1 transition-colors" active-class="border-b-2 border-[#f0a22a] text-black font-semibold">
            <Trophy class="w-5 h-5 text-center" /> Awards
+          </RouterLink>
+
+          <RouterLink to="/styles" class="flex items-center gap-1.5 text-[#333333] hover:text-[#f0a22a] pb-1 transition-colors" active-class="border-b-2 border-[#f0a22a] text-black font-semibold">
+            <Award class="w-5 h-5 text-center" /> Styles
           </RouterLink>
 
           <RouterLink to="/sponsors" class="flex items-center gap-1.5 text-[#333333] hover:text-[#f0a22a] pb-1 transition-colors" active-class="border-b-2 border-[#f0a22a] text-black font-semibold">
@@ -101,22 +101,22 @@ const toggleMenu = () => {
 
         <RouterLink
           @click="isMenuOpen = false"
-          to="/styles"
-          class="flex items-center gap-3 text-gray-800 py-1"
-          active-class="text-[#f0a22a] font-bold"
-        >
-          <Award class="w-5 h-5" />
-          Styles
-        </RouterLink>
-
-        <RouterLink
-          @click="isMenuOpen = false"
           to="/awards"
           class="flex items-center gap-3 text-gray-800 py-1"
           active-class="text-[#f0a22a] font-bold"
         >
           <Trophy class="w-5 h-5" />
           Awards
+        </RouterLink>
+
+        <RouterLink
+          @click="isMenuOpen = false"
+          to="/styles"
+          class="flex items-center gap-3 text-gray-800 py-1"
+          active-class="text-[#f0a22a] font-bold"
+        >
+          <Award class="w-5 h-5" />
+          Styles
         </RouterLink>
 
         <RouterLink
