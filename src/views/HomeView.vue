@@ -2,7 +2,7 @@
   <section class="relative px-4  min-h-screen bg-[#FAF9F5]">
   <div class="mx-auto max-w-5xl ">
 
-    <section class="relative min-h-[700px] md:min-h-[850px] flex items-center justify-center py-12 px-4 ">
+    <section class="relative min-h-[700px] md:min-h-[850px] flex items-center justify-center py-10 px-5 ">
       <div class="relative z-10 w-full max-w-7xl bg-white rounded-[32px] border border-slate-200 shadow-[0_20px_60px_-15px_rgba(15,23,42,0.04)] p-8 md:p-16 lg:p-20">        
         <div class="max-w-2xl">
           
@@ -54,15 +54,15 @@
       </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 ">
+    <section class="max-w-7xl mx-auto px-4 ">
       <div class="text-center mb-10">
         <h2 class="text-3xl md:text-4xl font-black text-slate-900">How Judging Works</h2>
         <p class="text-slate-500 mt-2 text-sm md:text-base">Three simple steps to crown the champion brewery.</p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-3 gap-6">
         
-        <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-50 text-center">
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-50 text-center">
           <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 mx-auto flex items-center justify-center font-black text-xl">
             1
           </div>
@@ -95,7 +95,7 @@
       </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 mt-20">
+    <section class="max-w-7xl mx-auto mt-10">
       <div class="bg-white rounded-[32px] p-8 md:p-14 border border-slate-50 shadow-sm">
         <div class="text-center max-w-3xl mx-auto">
           <span class="text-amber-600 font-extrabold uppercase tracking-widest text-base">About The Event</span>
@@ -110,7 +110,7 @@
       </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-6 mt-17 pb-24">
+    <section class="max-w-7xl mx-auto px-5 mt-10 pb-10">
       <div class="text-center mb-10">
         <span class="inline-flex items-center gap-2 text-amber-600 font-extrabold uppercase tracking-[3px] text-base">
           Event Navigation
@@ -121,7 +121,7 @@
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
 
         <RouterLink to="/breweries" class="group bg-white rounded-[28px] p-8 shadow-sm border border-slate-100/70 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300">
           <div class="w-14 h-14 rounded-2xl bg-amber-500/10 flex items-center justify-center mb-6 text-amber-600">

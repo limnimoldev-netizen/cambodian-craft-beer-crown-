@@ -1,18 +1,18 @@
 <template>
-  <section class=" px-4 py-10 min-h-screen bg-[#FAF9F5]">
+  <section class=" px-5 py-7 min-h-screen bg-[#FAF9F5]">
   <div class="mx-auto max-w-5xl ">
-  <div class="mx-auto max-w-5xl bg-[#FAF9F5] flex flex-col">
+  <div class="mx-auto max-w-2xl bg-[#FAF9F5] flex flex-col">
     
     <!-- Main Content -->
     <main class="flex-1 max-w-2xl mx-auto w-full px-6 ">
       
       <!-- Header -->
-      <p class="text-amber-500 font-medium mb-2">Event Day</p>
-      <h1 class="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">Schedule</h1>
-      <div class="w-40 h-[2px] bg-[#EE9F27]  mt-4"></div>
+      <p class="text-amber-500 font-medium ">Event Day</p>
+      <h1 class=" text-3xl font-bold text-gray-900 sm:text-4xl">Schedule</h1>
+      <div class="w-33 h-[2px] bg-[#EE9F27] "></div>
       
       <!-- Description -->
-      <p class="text-gray-600 mb-15 mt-10">
+      <p class="text-gray-600 mb-9 mt-7">
         The full schedule will be confirmed 2–3 weeks before the event. Join us for an evening of craft beer tasting, food pairing, brewery stories, and networking with fellow beer enthusiasts. Explore unique flavors and discover the art of Cambodian craft brewing.
       </p>
 

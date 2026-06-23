@@ -1,6 +1,6 @@
 <template>
-  <section class=" px-4 py-10 min-h-screen bg-[#FAF9F5]">
-    <div class="mx-auto max-w-5xl">
+  <section class=" px-4 py-9 min-h-screen bg-[#FAF9F5]">
+    <div class="mx-auto max-w-5xl ">
       <!-- Header -->
       <div class="text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500">
@@ -17,7 +17,7 @@
       </div>
 
       <!-- Brewery Grid -->
-      <div class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         <div
           v-for="brewery in breweries"
           :key="brewery.name"

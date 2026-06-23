@@ -1,5 +1,5 @@
 <template>
-  <section class=" px-4 py-10 min-h-screen bg-[#FAF9F5]">
+  <section class=" px-4 py-8 min-h-screen bg-[#FAF9F5]">
     <div class="mx-auto max-w-6xl ">
       <!-- Header -->
       <div class="text-center">
@@ -12,18 +12,18 @@
         <p class="mx-auto mt-2 max-w-2xl text-sm text-gray-500 leading-relaxed">
           We thank our generous sponsors who make the Cambodian Craft Beer Crown 2025 possible. And we are proud to partner with these incredible organizations who share our passion for craft beer excellence.
         </p>
-        <div class="w-40 h-[2px] bg-[#EE9F27] mx-auto mt-4"></div>
+        <div class="w-40 h-[2px] bg-[#EE9F27] mx-auto mt-3"></div>
       </div>
 
       <!-- Platinum Sponsors -->
-      <div v-if="getSponsorsByTier('Platinum').length" class="mt-16">
-        <div class="text-center mb-8">
+      <div v-if="getSponsorsByTier('Platinum').length" class="mt-9">
+        <div class="text-center mb-7">
           <span class="inline-block px-6 py-1.5 bg-gradient-to-r from-[#E5E4E2] to-[#A9A9A9] text-gray-700 text-xs font-semibold uppercase tracking-widest rounded-full">
             Platinum Sponsors
           </span>
         </div>
         <div 
-          class="grid gap-8 max-w-4xl mx-auto justify-items-center"
+          class="grid gap-5 max-w-4xl mx-auto justify-items-center"
           :class="getGridClass(getSponsorsByTier('Platinum').length, 'platinum')"
         >
           <div
@@ -54,14 +54,14 @@
       </div>
 
       <!-- Gold Sponsors -->
-      <div v-if="getSponsorsByTier('Gold').length" class="mt-16">
+      <div v-if="getSponsorsByTier('Gold').length" class="mt-9">
         <div class="text-center mb-8">
           <span class="inline-block px-6 py-1.5 bg-gradient-to-r from-[#FFD700] to-[#D4A017] text-white text-xs font-semibold uppercase tracking-widest rounded-full">
             Gold Sponsors
           </span>
         </div>
         <div 
-          class="grid gap-6 max-w-5xl mx-auto justify-items-center"
+          class="grid gap-5 max-w-5xl mx-auto justify-items-center"
           :class="getGridClass(getSponsorsByTier('Gold').length, 'gold')"
         >
           <div
@@ -92,14 +92,14 @@
       </div>
 
       <!-- Silver Sponsors -->
-      <div v-if="getSponsorsByTier('Silver').length" class="mt-16">
+      <div v-if="getSponsorsByTier('Silver').length" class="mt-9">
         <div class="text-center mb-8">
           <span class="inline-block px-6 py-1.5 bg-gradient-to-r from-[#E8E8E8] to-[#A0A0A0] text-gray-700 text-xs font-semibold uppercase tracking-widest rounded-full">
             Silver Sponsors
           </span>
         </div>
         <div 
-          class="grid gap-6 max-w-5xl mx-auto justify-items-center"
+          class="grid gap-5 max-w-5xl mx-auto justify-items-center"
           :class="getGridClass(getSponsorsByTier('Silver').length, 'silver')"
         >
           <div
@@ -130,14 +130,14 @@
       </div>
 
       <!-- Bronze Sponsors -->
-      <div v-if="getSponsorsByTier('Bronze').length" class="mt-16">
+      <div v-if="getSponsorsByTier('Bronze').length" class="mt-9">
         <div class="text-center mb-8">
           <span class="inline-block px-6 py-1.5 bg-gradient-to-r from-[#CD7F32] to-[#A97142] text-white text-xs font-semibold uppercase tracking-widest rounded-full">
             Bronze Sponsors
           </span>
         </div>
         <div 
-          class="grid gap-6 max-w-5xl mx-auto justify-items-center"
+          class="grid gap-5 max-w-5xl mx-auto justify-items-center"
           :class="getGridClass(getSponsorsByTier('Bronze').length, 'bronze')"
         >
           <div
@@ -168,7 +168,7 @@
       </div>
 
       <!-- Partners -->
-      <div v-if="getSponsorsByTier('Partner').length" class="mt-16">
+      <div v-if="getSponsorsByTier('Partner').length" class="mt-9">
         <div class="text-center mb-8">
           <span class="inline-block px-6 py-1.5 bg-gradient-to-r from-gray-300 to-gray-400 text-gray-700 text-xs font-semibold uppercase tracking-widest rounded-full">
             Partners
@@ -206,11 +206,11 @@
       </div>
 
       <!-- Bottom Decoration -->
-      <div class="mt-16 flex items-center justify-center gap-4 text-xs text-gray-400">
+      <!-- <div class="mt-16 flex items-center justify-center gap-4 text-xs text-gray-400">
         <span class="h-px w-12 bg-gray-300"></span>
         <span class="tracking-wide">Supporting Craft Beer in Cambodia</span>
         <span class="h-px w-12 bg-gray-300"></span>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <section class=" px-4 py-10 min-h-screen bg-[#FAF9F5]">
+    <section class=" px-4 py-4 min-h-screen bg-[#FAF9F5]">
   <div class="mx-auto max-w-5xl ">
   <!-- link icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -7,7 +7,7 @@
     <div class="min-h-screen bg-[#FAF9F5] font-sans text-slate-800 antialiased selection:bg-amber-100">
     
     <!-- Hero Header -->
-    <section class="max-w-4xl mx-auto px-4  pb-16 text-center relative">
+    <section class="max-w-4xl mx-auto px-3  pb-5 text-center relative">
         <div class="absolute inset-0 bg-radial from-amber-500/5 to-transparent blur-3xl -z-10"></div>
         <h1 class="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
             Competition <span class="bg-gradient-to-r from-[#c58b38] to-[#EE9F27] bg-clip-text text-[#EE9F27]">Awards</span>
@@ -113,8 +113,8 @@
     </main>
 
     <!-- Bottom Ribbon (Styled exactly like image_528d64.png) -->
-    <section class="max-w-5xl mx-auto px-4 py-2">
-        <div class="bg-[#f3edd7]/40 p-6 sm:p-8 rounded-lg flex flex-row items-center gap-6 text-left">
+    <section class="max-w-5xl mx-auto px-4 py-3">
+        <div class="bg-[#f3edd7]/40 p-5 sm:p-8 rounded-lg flex flex-row items-center gap-4 text-left">
             <div class="text-[#f7c200] text-4xl sm:text-5xl flex items-center justify-center ">
                 <i class="fa-solid fa-trophy"></i>
             </div>

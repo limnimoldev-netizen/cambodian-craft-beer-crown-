@@ -1,10 +1,10 @@
 <template>
-   <section class=" px-4 py-10 min-h-screen bg-[#FAF9F5]">
+   <section class=" px-4  min-h-screen bg-[#FAF9F5]">
   <div class="mx-auto max-w-5xl ">
-  <div class="min-h-screen bg-gray-50 px-4 sm:px-8 lg:px-24 py-10">
+  <div class="min-h-screen bg-gray-50 px-4 sm:px-8 lg:px-24 py-9">
 
     <!-- Filter Buttons -->
-    <div class="flex flex-wrap gap-2 mb-8">
+    <div class="flex flex-wrap gap-2 mb-6">
       <button
         v-for="filter in filters"
         :key="filter"
