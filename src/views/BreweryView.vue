@@ -59,85 +59,88 @@
 </template>
 
 <script setup>
-// FIX: Updated all image strings to relative paths targeting your assets folder
+// 1. Tell Vite to find and bundle all images inside the assets folder
+const images = import.meta.glob('../assets/*.{png,jpg,jpeg,svg,webp}', { eager: true })
+
 const breweries = [
   {
     name: 'Projekt Brew Co.',
     description: 'Projekt brews is a small microbrewery based in Kampot. A Kampot-based microbrewery making modern hoppy beers since 2020.',
     facebook: 'https://www.facebook.com/profile.php?id=100063463360069',
-    logo: '../assets/projectbrews.webp' 
+    logo: 'projectbrews.webp' // FIX: Just use the plain filename now!
   },
   {
     name: 'Sak Pub',
     description: 'SAK PUB Craft Beer & Bites opened its taproom and kitchen in October 2021, serving handcrafted in small batch craft beer.',
     facebook: 'https://www.facebook.com/SakPubCraftBeerBites',
-    logo: '../assets/sakpub.webp'
+    logo: 'sakpub.webp'
   },
   {
     name: 'Botanico Brewing Company',
     description: 'Located in the heart of Phnom Penh, Botanico is one of the oldest craft breweries in the country, creating a big beers.',
     facebook: 'https://www.facebook.com/botanicobrewingco',
-    logo: '../assets/botanico.webp'
+    logo: 'botanico.webp'
   },
   {
     name: 'Riel Brewing and Distilling',
     description: 'Riel Brewing is a pioneering craft brewery located right here in Phnom Penh, celebrated for helping to establish the locale.',
     facebook: 'https://www.facebook.com/rielbrewing',
-    logo: '../assets/rielbrewing.webp'
+    logo: 'rielbrewing.webp'
   },
   {
     name: 'Fuzzy Logic',
     description: 'Established in 2014, Fuzzy Logic Brewing Co. is one of the pioneers in introducing craft beer to Cambodia and South East Asia.',
     facebook: 'https://www.facebook.com/FuzzyLogicCambodia',
-    logo: '../assets/fuzzylogic.webp'
+    logo: 'fuzzylogic.webp'
   },
   {
     name: 'brew Khnear',
     description: 'At Brew Khnear, (loosely translated as ‘Brew Together,’) our focus is on getting that work/life balance right.With solid. hahaha',
     facebook: '#',
-    logo: '../assets/brewkhnear.webp'
+    logo: 'brewkhnear.webp'
   },
   {
     name: 'Funghi Art',
     description: 'Create new value for Cambodian rice through fermentation technology. All made from Cambodian Rice. ',
     facebook: 'https://www.facebook.com/profile.php?id=100069892638809',
-    logo: '../assets/funghiart.webp'
+    logo: 'funghiart.webp'
   },
   {
     name: 'Jaya-Vara Meadery',
     description: 'Jaya-Vara Meadery has been crafting unique meads and beers in Cambodia for the past 3 years.',
     facebook: 'https://www.facebook.com/profile.php?id=100080223013722',
-    logo: '../assets/jayavara.webp'
+    logo: 'jayavara.webp'
   },
   {
     name: 'Krama Craft Brewery',
     description: 'Krama Craft Brewery is a cozy craft brewery located in Siem Reap, founded by two partners — one French,',
     facebook: 'https://www.facebook.com/profile.php?id=100095224728868',
-    logo: '../assets/kramacraft.webp'
+    logo: 'kramacraft.webp'
   },
   {
     name: 'Himawari Microbrewery',
     description: 'Himawari Microbrewery is the 1st and only microbrewery launched by it’s 5-star hotel-apartments in Cambodia.',
     facebook: 'https://www.facebook.com/HimawariHotelMicrobrewery',
-    logo: '../assets/himawari.png' // FIX: Cleaned up spacing and capitalization
+    logo: 'himawari.png'
   },
   {
     name: 'Chug Lab',
     description: 'Chug Brew is a very small nano brewery located in Phnom Penh with the focus on high quality modern craft beers.',
     facebook: 'https://www.facebook.com/thechuglab',
-    logo: '../assets/chuglab.webp'
+    logo: 'chuglab.webp'
   },
   {
     name: 'Bash Brewing',
     description: 'is one of the Kingdom’s original craft breweries, creating some of the finest all-natural craft beer in Cambodia.',
     facebook: 'https://www.facebook.com/bashbrewingkh',
-    logo: '../assets/bash-brewing.png' // FIX: Swapped spaces for safe hyphen
+    logo: 'bash-brewing.png'
   }
 ]
 
-// FIX: Helper function to process dynamic strings as real compiled assets via Vite
-const getImageUrl = (path) => {
-  return new URL(path, import.meta.url).href
+// 2. Updated helper function to match the globally imported filenames
+const getImageUrl = (filename) => {
+  const path = `../assets/${filename}`
+  return images[path] ? images[path].default : ''
 }
 </script>
 
