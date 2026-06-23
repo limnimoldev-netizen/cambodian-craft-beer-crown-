@@ -1,5 +1,5 @@
 <template>
-  <section class="relative px-4 min-h-screen bg-[#FAF9F5] py-6 md:py-10">
+  <section class="relative px-4 min-h-screen bg-[#FAF9F5]  md:py-10">
     <div class="mx-auto max-w-5xl">
 
       <section class="relative flex items-center justify-center px-5 mb-4 md:mb-6">
